@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "743703182058",
+    "firebase_url": "https://ibuy-abcf4.firebaseio.com",
+    "project_id": "ibuy-abcf4",
+    "storage_bucket": "ibuy-abcf4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:743703182058:android:c8f1f4c62dca2928d77593",
+        "android_client_info": {
+          "package_name": "com.example.ibuy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "743703182058-d07mo83blsfhal6o7lh9jvc83j793fg5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ibuy",
+            "certificate_hash": "5b6b0b1400be666f68a28f821cff3cdcb44aa167"
+          }
+        },
+        {
+          "client_id": "743703182058-8r0mdt3cbuiq3s1q8eioqk516hldgof9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDoK9MJuE3qbzcNI8vGqxSg1cevsf_sY0U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "743703182058-8r0mdt3cbuiq3s1q8eioqk516hldgof9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.ibuy.views.fragments.MainFragment"
+        android:label=""
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_nav_home_to_cartFragment3"
+            app:destination="@id/cartFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.ibuy.views.fragments.AccountFragment"
+        android:label=""
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.ibuy.views.fragments.AboutFragment"
+        android:label=""
+        tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/cartFragment"
+        android:name="com.example.ibuy.views.fragments.CartFragment"
+        android:label=""
+        tools:layout="@layout/fragment_cart">
+
+        <action
+            android:id="@+id/action_self_reference"
+            app:destination="@id/cartFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/orderFragment"
+        android:name="com.example.ibuy.views.fragments.OrderFragment"
+        android:label=""
+        tools:layout="@layout/fragment_order" />
+
+    <fragment
+        android:id="@+id/allProductsFragment"
+        android:name="com.example.ibuy.views.fragments.AllProductsFragment"
+        android:label="fragment_all_products"
+        tools:layout="@layout/fragment_all_products" >
+
+    </fragment>
+    <fragment
+        android:id="@+id/fashionFragment"
+        android:name="com.example.ibuy.views.fragments.FashionFragment"
+        android:label="fragment_fashion"
+        tools:layout="@layout/fragment_fashion" >
+
+    </fragment>
+    <fragment
+        android:id="@+id/footwearFragment"
+        android:name="com.example.ibuy.views.fragments.FootwearFragment"
+        android:label="fragment_footwear"
+        tools:layout="@layout/fragment_footwear" >
+
+    </fragment>
+    <fragment
+        android:id="@+id/menFragment"
+        android:name="com.example.ibuy.views.fragments.MenFragment"
+        android:label="fragment_men"
+        tools:layout="@layout/fragment_men" >
+
+    </fragment>
+    <fragment
+        android:id="@+id/womenFragment"
+        android:name="com.example.ibuy.views.fragments.WomenFragment"
+        android:label="fragment_women"
+        tools:layout="@layout/fragment_women" >
+
+    </fragment>
+    <activity
+        android:id="@+id/productDetailActivity"
+        android:name="com.example.ibuy.views.activities.ProductDetailActivity"
+        android:label="activity_product_detail"
+        tools:layout="@layout/activity_product_detail" />
+
+</navigation>

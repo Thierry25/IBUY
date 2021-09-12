@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray"
+    android:orientation="vertical"
+    tools:context=".views.activities.OrderActivity">
+
+    <TextView
+        android:id="@+id/thank_you"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="164dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/search_bar_spacing"
+        android:fontFamily="@font/calligraffitti"
+        android:text="@string/thank_you"
+        android:textColor="@color/orange"
+        android:textSize="@dimen/extreme_size"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/fore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fore"
+        android:textColor="@color/orange"
+        android:textSize="@dimen/extreme_size"
+        android:textStyle="bold"
+        android:layout_marginBottom="@dimen/search_bar_spacing"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/thank_you"
+        android:fontFamily="@font/calligraffitti" />
+
+    <TextView
+        android:id="@+id/purchase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/purchase"
+        android:textColor="@color/orange"
+        android:textSize="@dimen/extreme_size"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/search_bar_spacing"
+        android:layout_below="@id/fore"
+        android:layout_marginStart="@dimen/search_bar_spacing"
+        android:fontFamily="@font/calligraffitti" />
+
+    <TextView
+        android:id="@+id/link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/search_bar_spacing"
+        android:layout_marginEnd="@dimen/search_bar_spacing"
+        android:layout_alignParentBottom="true"
+        android:text="@string/see_invoice"
+        android:textColor="@color/light_blue_A200"
+        android:textStyle="italic"
+        android:layout_marginBottom="@dimen/login_sign_up_top_bottom_margin"
+        android:textSize="@dimen/product_presentation_size"
+        android:layout_centerHorizontal="true"
+        />
+
+    <LinearLayout
+        android:id="@+id/bg_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:background="@color/dark_gray"/>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="@dimen/progress_bar_size"
+        android:layout_height="@dimen/progress_bar_size"
+        style="@style/ProgressBarOrange"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="visible"/>
+
+
+
+</RelativeLayout>

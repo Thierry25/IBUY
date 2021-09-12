@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context=".views.fragments.OrderFragment">
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="@dimen/progress_bar_size"
+        android:layout_height="@dimen/progress_bar_size"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/card_products"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_view" />
+
+    <RelativeLayout
+        android:id="@+id/bottom_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/total_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/search_bar_spacing"
+            android:layout_marginTop="@dimen/nav_header_vertical_spacing"
+            android:text="@string/total"
+            android:textColor="@color/dark_gray"
+            android:textSize="@dimen/product_price_size" />
+
+        <TextView
+            android:id="@+id/total_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/total_text"
+            android:layout_marginStart="@dimen/search_bar_spacing"
+            android:layout_marginTop="@dimen/nav_header_vertical_spacing"
+            android:layout_marginBottom="@dimen/nav_header_vertical_spacing"
+            android:layout_toStartOf="@id/checkout_button"
+            android:text="@string/product_price_placeholder_1"
+            android:textColor="@color/dark_gray"
+            android:textSize="@dimen/total_price_size"
+            android:textStyle="bold" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/checkout_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/search_bar_spacing"
+            android:layout_marginEnd="@dimen/search_bar_spacing"
+            android:layout_marginBottom="@dimen/nav_header_vertical_spacing"
+            android:background="@drawable/checkout_border"
+            android:drawableEnd="@drawable/ic_baseline_arrow_right_alt_24"
+            android:drawablePadding="@dimen/search_bar_spacing"
+            android:text="@string/checkout"
+            android:textColor="@color/white"
+            app:backgroundTint="@color/orange" />
+    </RelativeLayout>
+</RelativeLayout>

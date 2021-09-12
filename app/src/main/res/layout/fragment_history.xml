@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray"
+    tools:context=".views.fragments.HistoryFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/orders"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+        <View
+            android:id="@+id/separator"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/extremely_thin_margin"
+            android:background="@color/white"
+            android:layout_below="@id/orders"
+            android:layout_marginTop="@dimen/nav_header_vertical_spacing"
+            android:layout_marginStart="@dimen/search_bar_spacing"
+            android:layout_marginEnd="@dimen/search_bar_spacing"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/bulk_orders"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/separator" />
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>

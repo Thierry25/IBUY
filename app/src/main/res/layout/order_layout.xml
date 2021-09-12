@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/search_bar_spacing"
+    android:layout_marginLeft="@dimen/search_bar_spacing"
+    android:layout_marginTop="@dimen/nav_header_vertical_spacing"
+    android:layout_marginEnd="@dimen/search_bar_spacing"
+    android:layout_marginRight="@dimen/search_bar_spacing"
+    android:background="@drawable/order_layout_border">
+
+    <RelativeLayout
+        android:id="@+id/order_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_vertical_margin"
+        android:layout_marginLeft="@dimen/activity_vertical_margin"
+        android:layout_marginEnd="@dimen/activity_vertical_margin"
+        android:layout_marginRight="@dimen/activity_vertical_margin">
+
+        <TextView
+            android:id="@+id/order_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@+id/date"
+            android:text="@string/orders"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/small_text_size_1"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/nav_header_vertical_spacing"
+            android:text="@string/date_placeholder"
+            android:textColor="@color/dark_gray"
+            android:textSize="@dimen/date_size"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/shipping_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/order_id"
+            android:layout_marginTop="@dimen/nav_header_vertical_spacing"
+            android:drawablePadding="@dimen/nav_header_vertical_spacing"
+            android:gravity="center"
+            android:text="@string/shipped"
+            android:textColor="@color/dark_gray"
+            android:textStyle="bold"
+            app:drawableLeftCompat="@drawable/ic_baseline_local_shipping_24" />
+
+        <TextView
+            android:id="@+id/product_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/shipping_image"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:text="@string/product_name_placeholder"
+            android:textColor="@color/black"
+            android:textSize="@dimen/small_text_size"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/product_qty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/shipping_image"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_marginEnd="@dimen/product_name_margin_top"
+            android:layout_toStartOf="@+id/product_price"
+            android:text="@string/qty_placeholder"
+            android:textColor="@color/dark_gray"
+            android:textSize="@dimen/small_text_size"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/product_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/shipping_image"
+            android:layout_alignParentEnd="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_marginEnd="@dimen/nav_header_vertical_spacing"
+            android:text="@string/product_price_placeholder"
+            android:textColor="@color/dark_gray"
+            android:textSize="@dimen/small_text_size"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/extremely_thin_margin"
+            android:layout_below="@id/product_name"
+            android:layout_marginStart="@dimen/order_width"
+            android:layout_marginTop="@dimen/nav_header_vertical_spacing"
+            android:layout_marginEnd="@dimen/order_height"
+            android:background="@color/light_gray" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/order_info">
+
+        <TextView
+            android:id="@+id/shipping_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/activity_vertical_margin"
+            android:layout_marginTop="@dimen/nav_header_vertical_spacing"
+            android:layout_marginBottom="@dimen/nav_header_vertical_spacing"
+            android:layout_toStartOf="@+id/price"
+            android:drawablePadding="@dimen/small_margin"
+            android:gravity="center_vertical"
+            android:text="@string/address_placeholder"
+            android:textColor="@color/dark_gray"
+            android:textSize="@dimen/small_text_size_1"
+            android:textStyle="bold"
+            app:drawableLeftCompat="@drawable/ic_dark_location" />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/nav_header_vertical_spacing"
+            android:layout_marginEnd="@dimen/search_bar_spacing"
+            android:layout_marginBottom="@dimen/nav_header_vertical_spacing"
+            android:text="@string/product_price_placeholder"
+            android:textColor="@color/orange"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

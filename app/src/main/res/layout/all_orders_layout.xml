@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/fab_margin"
+    android:background="@drawable/login_fields_border"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/order_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/order_placeholder"
+        android:textColor="@color/black"
+        android:textSize="@dimen/order_size_text"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/nav_header_vertical_spacing"
+        android:layout_marginStart="@dimen/nav_header_vertical_spacing"/>
+    <TextView
+        android:id="@+id/user_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/order_placeholder"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/nav_header_vertical_spacing"
+        android:textSize="@dimen/email_size_text"
+        android:layout_marginStart="@dimen/search_bar_spacing"/>
+
+
+</LinearLayout>
